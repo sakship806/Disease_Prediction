@@ -1,0 +1,16 @@
+{% extends 'home.html' %}
+{% block content %}
+<center><h1>Covid Predictor</h1></center>
+ <br>
+ <form action="{{url_for('predictT') }}"method="POST">
+ <h5>Cough</h5>  <input style="border: 1px solid black;"  type="text" name="Cough" placeholder="0 for NO, 1 for YES">
+ <h5>Fever</h5>  <input style="border: 1px solid black;"  type="text" name="Fever" placeholder=" 0 for NO, 1 for YES">
+ <h5>Sore Throat</h5>  <input style="border: 1px solid black;"  type="text" name="Sore Throat" placeholder="0 for NO, 1 for YES">
+ <h5>Shortness of breath</h5>  <input style="border: 1px solid black;"  type="text" name="Shortness of breath" placeholder="0 for NO, 1 for YES">
+ <h5>Headache</h5>  <input style="border: 1px solid black;"  type="text" name="Headache" placeholder="0 for NO, 1 for YES">
+ <h5>Senior Citizen</h5>  <input style="border: 1px solid black;"  type="text" name="Senior Citizen" placeholder="0 for NO, 1 for YES">
+ <h5>Gender</h5>  <input style="border: 1px solid black;"  type="text" name="Gender" placeholder="0 for male, 1 for female">
+ <h5>Test Indication</h5>  <input style="border: 1px solid black;"  type="text" name="Test Indication" placeholder="0: Abroad, 1: Contact with confirmed, 2:Other">
+   <input type="submit">
+ </form>
+  {% endblock %}

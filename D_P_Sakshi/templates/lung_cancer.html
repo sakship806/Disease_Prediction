@@ -1,0 +1,23 @@
+{% extends 'home.html' %}
+{% block content %}
+<center><h1>Lung Cancer Predictor</h1></center>
+  <br>
+  <form action="{{url_for('predictT') }}"method="POST">
+  <h5>Age</h5>  <input style="border: 1px solid black;"  type="text" name="Age" placeholder="enter your age">
+  <h5>Do you smoke?</h5>  <input style="border: 1px solid black;"  type="text" name="Do you smoke?" placeholder=" 1 for NO, 2 for YES">
+  <h5>Yellow Fingers</h5>  <input style="border: 1px solid black;"  type="text" name="Yellow Fingers" placeholder="1 for NO, 2 for YES">
+  <h5>Anxiety</h5>  <input style="border: 1px solid black;"  type="text" name="Anxiety" placeholder="1 for NO, 2 for YES">
+  <h5>Peer Pressure</h5>  <input style="border: 1px solid black;"  type="text" name="Peer Pressure" placeholder="1 for NO, 2 for YES">
+  <h5>Chronic disease</h5>  <input style="border: 1px solid black;"  type="text" name="Chronic disease" placeholder="1 for NO, 2 for YES">
+  <h5>Fatigue</h5>  <input style="border: 1px solid black;"  type="text" name="Fatigue" placeholder="1 for NO, 2 for YES">
+  <h5>Shortness of Breathe</h5>  <input style="border: 1px solid black;"  type="text" name="Shortness of Breathe" placeholder="1 for NO, 2 for YES">
+  <h5>Allergy</h5>  <input style="border: 1px solid black;"  type="text" name="Allergy" placeholder="1 for NO, 2 for YES">
+  <h5>Wheezing</h5>  <input style="border: 1px solid black;"  type="text" name="Wheezing" placeholder="1 for NO, 2 for YES">
+  <h5>Alcohol Consumer</h5>  <input style="border: 1px solid black;"  type="text" name="alcohol Consumer" placeholder="1 for NO, 2 for YES">
+  <h5>Coughing</h5>  <input style="border: 1px solid black;"  type="text" name="Coughing" placeholder="1 for NO, 2 for YES">
+  <h5>Swallowing Difficulty</h5>  <input style="border: 1px solid black;"  type="text" name="Swallowing Difficulty" placeholder="1 for NO, 2 for YES">
+  <h5>Chest Pain</h5>  <input style="border: 1px solid black;"  type="text" name="Chest Pain" placeholder="1 for NO, 2 for YES">
+  <h5>Sex</h5> <input style="border: 1px solid black;"  type="text" name="Sex" placeholder="1 for Male, 0 for Female">
+    <input type="submit">
+  </form>
+  {% endblock %}

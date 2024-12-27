@@ -1,0 +1,19 @@
+{% extends 'home.html' %}
+{% block content %}
+<center>Heart Disease Predictor</center>
+<br>
+<form action="{{url_for('predictT') }}"method="POST">
+  <input style="border: 1px solid black;"  type="text" name="Age" placeholder="Eg. 52">
+  <input style="border: 1px solid black;"  type="text" name="Sex" placeholder=" 0 for male, 1 for female">
+  <input style="border: 1px solid black;"  type="text" name="Chest Pain Type" placeholder="0 for ATA, 1 for NAP, 2 for ASY, 3 for TA">
+  <input style="border: 1px solid black;"  type="text" name="Resting BP" placeholder="Eg. 125">
+  <input style="border: 1px solid black;"  type="text" name="Cholesterol" placeholder="Eg. 272">
+  <input style="border: 1px solid black;"  type="text" name="Fasting BS" placeholder="0 for NO, 1 for YES">
+  <input style="border: 1px solid black;"  type="text" name="Resting ECG" placeholder="0 for Normal, 1 for ST, 2 for LVH">
+  <input style="border: 1px solid black;"  type="text" name="Max HR" placeholder="Eg. 139">
+  <input style="border: 1px solid black;"  type="text" name="Exercise Angina" placeholder="0 for NO, 1 for YES">
+  <input style="border: 1px solid black;"  type="text" name="Old peak" placeholder="Eg. 0.0">
+  <input style="border: 1px solid black;"  type="text" name="ST slope" placeholder="0 for Up, 1 for Down, 2 for Flat">
+  <input type="submit">
+</form>
+  {% endblock %}

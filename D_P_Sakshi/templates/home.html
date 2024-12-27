@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disease Predictor</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/home.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+</head>
+<div class="main-body">
+  <body>
+    <img class="medical"src="images/healthcare.png" alt="cloud image">
+    <div class="top-container">
+      <a  href="{{ url_for('home') }}"><button type="button" class="btn btn-dark btn-lg">Home</button></a>
+      <a  href="{{ url_for('lung') }}"><button type="button" class="btn btn-dark btn-lg">Lung Cancer</button></a>
+      <a  href="{{ url_for('covid') }}"><button type="button" class="btn btn-dark btn-lg">Covid</button></a>
+      <a  href="{{ url_for('heart') }}"><button type="button" class="btn btn-dark btn-lg">Heart Disease</button></a>
+
+      {% block content %}
+
+    	{% endblock %}
+
+      <h1>THANK YOU FOR VISITING.</h1>
+    </div>
+  </body>
+</div>
+
+</html>

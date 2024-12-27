@@ -1,0 +1,27 @@
+
+body {
+
+  margin: 0;
+
+  width: 100%;
+  height:500px;
+  background-color: #9DF1DF;
+}
+h1{
+  font-family: 'Merriweather', serif;
+  font-size:2.5rem;
+  color: #0A2647;
+  font-weight: normal;
+}
+.top-container{
+  position: absolute;
+  padding-left: 500px;
+  padding-top: 20px;
+  top:600px;
+  text-align: center;
+}
+.medical{
+  position: absolute;
+  top: 50px;
+  right: 450px;
+}
